@@ -1,1 +1,1 @@
-{}
+// empty config so nvim launches the deno lsp
