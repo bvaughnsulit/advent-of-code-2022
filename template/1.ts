@@ -1,4 +1,4 @@
 const input = Deno.readTextFileSync('./input.txt')
-  .split('\n')
-  .map((e: string) => e ? Number(e) : undefined )
+  .split('\n').slice(0,-1)
+  .map((e: string) => Number(e))
 console.log(input)

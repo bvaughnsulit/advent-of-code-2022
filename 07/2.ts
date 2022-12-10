@@ -14,7 +14,7 @@ class Dir {
   name: string
   parent: Dir | null
   files?: { size: number, files?: [] }
-  dirSize: number
+  // dirSize: number
   constructor(name: string, parent: Dir | null){
     this.name = name  
     // this.dirs = {}
@@ -23,7 +23,7 @@ class Dir {
     //   size: 0,
     //   files: []
     // }
-    this.dirSize = 0 
+    // this.dirSize = 0 
   }
 
   setContents(arr: []) {
@@ -80,3 +80,4 @@ for (const line of lines) {
 root.getSize()
 console.log('min: ', 30000000 - (70000000 - root.getSize()))
 console.log('result: ', result)
+console.log(root)
